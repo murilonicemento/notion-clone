@@ -1,3 +1,5 @@
+import { Editor } from "./components/Editor";
+
 export function App() {
   return (
     <div className="min-h-screen p-8 text-zinc-900 bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400">
@@ -9,7 +11,9 @@ export function App() {
             <button className="w-3 h-3 rounded-full bg-zinc-300 hover:bg-green-400" />
           </div>
         </aside>
-        <main className="p-4"></main>
+        <main className="p-4">
+          <Editor />
+        </main>
       </div>
     </div>
   );
