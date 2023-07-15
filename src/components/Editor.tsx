@@ -72,13 +72,85 @@ export function Editor() {
           >
             <img
               src="http://www.notion.so/images/blocks/header.57a7576a.png"
-              alt="Heading Icon"
+              alt="Heading Level 1 Icon"
               className="w-12 border border-zinc-600 rounded"
             />
             <div className="flex flex-col text-left">
               <span className="text-sm font-semibold">Heading 1</span>
               <span className="text-xs text-zinc-400">
                 Big Section Heading.
+              </span>
+            </div>
+          </button>
+
+          <button
+            onClick={() =>
+              editor.chain().focus().toggleHeading({ level: 2 }).run()
+            }
+            className="flex items-center gap-2 p-1 rounded min-w-[280px] hover:bg-zinc-200"
+          >
+            <img
+              src="http://www.notion.so/images/blocks/subheader.9aab4769.png"
+              alt="Heading Level 2 Icon"
+              className="w-12 border border-zinc-600 rounded"
+            />
+            <div className="flex flex-col text-left">
+              <span className="text-sm font-semibold">Heading 2</span>
+              <span className="text-xs text-zinc-400">
+                Medium Section Heading.
+              </span>
+            </div>
+          </button>
+
+          <button
+            onClick={() =>
+              editor.chain().focus().toggleHeading({ level: 3 }).run()
+            }
+            className="flex items-center gap-2 p-1 rounded min-w-[280px] hover:bg-zinc-200"
+          >
+            <img
+              src="http://www.notion.so/images/blocks/subsubheader.d0ed0bb3.png"
+              alt="Heading Level 3 Icon"
+              className="w-12 border border-zinc-600 rounded"
+            />
+            <div className="flex flex-col text-left">
+              <span className="text-sm font-semibold">Heading 3</span>
+              <span className="text-xs text-zinc-400">
+                Small Section Heading.
+              </span>
+            </div>
+          </button>
+
+          <button
+            onClick={() => editor.chain().focus().toggleBulletList().run()}
+            className="flex items-center gap-2 p-1 rounded min-w-[280px] hover:bg-zinc-200"
+          >
+            <img
+              src="http://www.notion.so/images/blocks/bulleted-list.0e87e917.png"
+              alt="Bulleted List Icon"
+              className="w-12 border border-zinc-600 rounded"
+            />
+            <div className="flex flex-col text-left">
+              <span className="text-sm font-semibold">Bulleted list</span>
+              <span className="text-xs text-zinc-400">
+                Create a simple bulleted list.
+              </span>
+            </div>
+          </button>
+
+          <button
+            onClick={() => editor.chain().focus().toggleCodeBlock().run()}
+            className="flex items-center gap-2 p-1 rounded min-w-[280px] hover:bg-zinc-200"
+          >
+            <img
+              src="http://www.notion.so/images/blocks/code.a8b201f4.png"
+              alt="Code Block Icon"
+              className="w-12 border border-zinc-600 rounded"
+            />
+            <div className="flex flex-col text-left">
+              <span className="text-sm font-semibold">Code Block</span>
+              <span className="text-xs text-zinc-400">
+                Capture a code snippet.
               </span>
             </div>
           </button>
