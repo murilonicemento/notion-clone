@@ -1,6 +1,6 @@
 # Notion Clone
 
-Este é um clone simples do [Notion](https://notion.so/pt-br), criado utilizando React.js.
+Este é um clone simples do [Notion](https://notion.so/pt-br), uma ferramenta popular para organização e produtividade. O clone incorpora algumas funcionalidades básicas do Notion, permitindo a criação de headings, blocos de códigos e bulleted lists.
 
 ## Pré-requisitos
 
